@@ -1,0 +1,32 @@
+type Query {
+  productById(id: ID): Product
+  customerById(id: ID): Customer
+  purchaseHistory(customerId: ID): [Purchase]
+}
+
+type Product {
+  id: ID
+  name: String
+  description: String
+  price: Int
+}
+
+type Customer {
+  id: ID
+  name: String
+  address: String
+}
+
+type Purchase {
+  id: ID
+  customer: Customer
+  product: Product
+  quantity: Int
+  date: String
+}
+
+type Mutation {
+  addPurchase(customerId: ID, productId: ID, quantity: Int): Purchase
+  addCustomer(name: String, address: String): Customer
+  addProduct(name: String, description: String, price: Int) : Product
+}

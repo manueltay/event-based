@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: worker-consumer
+  main:
+    allow-bean-definition-overriding: true
+
+  kafka:
+    bootstrap:
+      servers: http://localhost:9092
+    acknowledge:
+      manual:
+        commit: true
+    replying:
+      template:
+        enabled: false
+
+server:
+  port: 8181

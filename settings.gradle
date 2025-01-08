@@ -1,0 +1,4 @@
+rootProject.name = 'event-based'
+include 'data-api'
+include 'worker-consumer'
+

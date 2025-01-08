@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: data-api
+  main:
+    allow-bean-definition-overriding: true
+
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/mydatabase
+
+  graphql:
+    graphiql:
+      enabled: true
