@@ -1,4 +1,4 @@
-# Test For Global Apex Mobility
+# Test project for event based ingestions
 
 ## Pre requisites
 1. Kafka
